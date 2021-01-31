@@ -40,8 +40,8 @@ def change_data_type(data):
         students.append([data_piece[0], data_piece[1]])
         summary += data_piece[2]
     middle = summary / len(data)
-
     return students, middle
+
 
 if __name__ == '__main__':
     a1, a2 = subject_statistics('Алгебра')

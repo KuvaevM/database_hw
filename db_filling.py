@@ -4,10 +4,9 @@ from db_init import get_connection
 def read_data_file(name):
     """Метод считывает словарь словоформ"""
     with open(name) as f:
-        number_of_string = 0
-        text_in_dictionary = f.read()
-        strings = text_in_dictionary.split('\n')
-        if strings[len(strings) - 1] == '':  # Удаляем последний элемент с пустой строкой
+        text_in_data_base = f.read()
+        strings = text_in_data_base.split('\n')
+        if strings[len(strings) - 1] == '':  # Удаляем последний элемент с пустой строкой, если он есть
             strings.pop()
         for line in strings:
             data = line.split(',')

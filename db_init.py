@@ -23,6 +23,7 @@ def init_table_marks():
     db.commit()
     db.close()
 
+
 def init_table_subjects():
     """Функция создает таблицу marks в базе данных, если ее еще нет"""
     db = get_connection()
