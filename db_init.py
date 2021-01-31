@@ -15,6 +15,7 @@ def init_table_marks():
     subject TEXT,
     student_name TEXT,
     student_surname TEXT,
+    group_number INTEGER,
     mark INTEGER,
     time INTEGER
     )""")
